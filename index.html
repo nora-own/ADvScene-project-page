@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>ADvScene: Adversarial Scenario Generation and Evolution for Autonomous Driving</title>
+  <title>ADvScene</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,7 +52,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">ADvScene: Adversarial Scenario Generation and Evolution for Autonomous Driving</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -148,7 +148,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            The generation of safety-critical adversarial scenarios in the simulation environment has become increasingly crucial for efficiently testing autonomous driving (AD) vehicles prior to road deployment. However, current approaches largely rely on predefined threat patterns or rule-based strategies, which limit their ability to expose diverse and unforeseen failure modes. To overcome these limitations, we introduce ADvScene, a novel framework for the automated generation and evolution of safety-critical adversarial scenarios aimed at revealing latent safety vulnerabilities in AD systems. Given a simple user prompt describing a benign driving scene, ADvScene first performs Meta-Scenario Generation, in which a large language model (LLM) is prompted to generate a richly detailed meta-scenario represented by the executable simulation programming language. This process is grounded in violations of established driving safety knowledge priors (e.g., traffic regulations, driver licensing criteria, and real-world accident records), ensuring that generated scenarios are both challenging and realistic. Building on this, we propose Complex Scenario Evolution, which constructs an adversarial collaboration graph to capture and identify key agents within the complex traffic environment. The trajectory segments of these agents are then subtly perturbed to maximize adversarial impact while preserving plausibility and coherence within the traffic flow. Extensive experiments conducted on multiple reinforcement learning-based and LLM-based AV models show that ADvScene uncovers more severe collision cases and achieve a +31.96% collision rate than state-of-the-art baselines. In addition, adversarial training on the generated cases could improve model robustness on safety-critical adversarial scenarios. Our codes can be found at \url{xxx}.
           </p>
         </div>
       </div>
